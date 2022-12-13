@@ -23,7 +23,7 @@ GLOBAL $USER;
 require_login();
 
 //SET BREADCRHUM
-$PAGE->navbar->add(get_string("pluginname", "local_reportsubmission"));
+$PAGE->navbar->add(get_string("pluginname", "local_myplugin"));
 
 //GET HEADER
 echo $OUTPUT->header();
@@ -33,8 +33,8 @@ $data = $DB->get_records_sql("SELECT * FROM {myplugin} LIMIT 5");
 
 $content = '<table class="table">
 <tr>
-<td>'.get_string("name", "local_reportsubmission").'</td>
-<td>'.get_string("address", "local_reportsubmission").'</td>
+<td>'.get_string("name", "local_myplugin").'</td>
+<td>'.get_string("address", "local_myplugin").'</td>
 </tr>';
 
 foreach ($data as $key => $value) {
