@@ -1,0 +1,2 @@
+# myplugin
+Simple Moodle Plugin
